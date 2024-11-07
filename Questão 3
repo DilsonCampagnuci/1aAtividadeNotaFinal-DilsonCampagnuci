@@ -1,0 +1,116 @@
+<!<!DOCTYPE HTML>
+<html lang="pt-BR">
+  <head>
+    <title>“Trabalho Final 1 – Questão 3</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+ 
+   <h2>Formulário de conntrato</h2>
+   <form id="contactForm" action="/submit_form" method="post">
+  
+  
+    
+  <label for="name">Nome:</label><br>
+  <input type="text" id="name" name="name" placeholder="Nome" required<br><br>
+ 
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" placeholder="Email" required<br><br>
+  
+  <label for="Mensagem">Mensagem:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea><br><br>
+  
+ <p> <input type="submit" value="Enviar"></head> </p>
+  </form>
+ 
+ <p class="error" id="errorMessage"></p>
+
+ 
+ 
+</body>
+
+
+ <head>
+ <style>
+
+	body{
+	 background-color:#ffe4e1;
+	 text-align: center;
+}	
+
+	input {
+	 background-color: white;
+	 color: black;
+	 font-family: Raleway;
+	 font-size: 100%;
+	 border: 2px solid #000;
+	 border-radius: 8px;
+	 padding: 5px;
+	 
+}
+  textarea {
+	 background-color: white;
+	 color: black;
+	 font-family: Raleway;
+	 font-size: 100%;
+	 border: 2px solid #000;
+	 border-radius: 8px;
+	 padding: 5px;
+	 
+}
+
+  h2 { 
+   background-color: black;
+	 color: white;
+	 font-family: Raleway;
+	 font-size: 100%;
+	 border: 2px solid #000;
+	 display: inline-block; 
+	 border-radius: 8px;
+	 padding: 5px;
+}
+  
+  input[type="submit"] {
+   background-color: grey;
+	 color: white;
+}	 
+
+  </style>
+  </head>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const errorMessage = document.getElementById('errorMessage');
+
+      const emailRegex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+
+      errorMessage.textContent = "";
+  
+    if (!name) {
+        errorMessage.textContent = "Por favor, insira seu nome.";
+        errorMessage.style.color = "red";
+      } else if (!email) {
+        errorMessage.textContent = "Por favor, insira seu email.";
+        errorMessage.style.color = "red";
+      } else if (!emailRegex.test(email)) {
+        errorMessage.textContent = "Por favor, insira um email válido.";
+        errorMessage.style.color = "red";
+      } else if (!message) {
+        errorMessage.textContent = "Por favor, insira sua mensagem.";
+        errorMessage.style.color = "red";
+      } else {
+        errorMessage.textContent = "Formulário enviado com sucesso!";
+        errorMessage.style.color = "green";
+        
+      }
+    });
+  </script>
+  
+  
+  </body>
+  </html>
