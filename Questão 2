@@ -1,0 +1,71 @@
+<!<!DOCTYPE HTML>
+<html lang="pt-BR">
+  <head>
+    <title>“Trabalho Final 1 – Questão 2</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table border= "10">
+
+	<tr>
+		<td>Produto</td>
+		<td>Descrição</td>
+		<td>Valor(R$)</td>
+
+	</tr>
+	<tr>
+		<td>Cimento Portland CP II-32</td>
+		<td>O cimento Portland CP II-32 é um dos mais usados em obras de pequeno e grande porte. Ele é indicado para fundações, lajes, rebocos e alvenaria, com uma secagem rápida e resistência adequada para construções.</td>
+		<td>R$ 35,00</td>
+	</tr>
+	<tr>
+		<td>Bloco de Concreto Estrutural 14x19x39 cm</td>
+		<td>Esse bloco de concreto é amplamente usado na construção de paredes estruturais e muros. Sua durabilidade e resistência são ideais para suportar o peso da estrutura sem a necessidade de colunas adicionais.</td>
+		<td>R$ 6,00</td>
+	</tr>
+	<tr>
+		<td>Telha de Fibrocimento Ondulada 4 mm</td>
+		<td>As telhas de fibrocimento são leves, fáceis de instalar e possuem um bom custo-benefício para cobertura de casas e galpões. A versão ondulada de 4 mm é bastante resistente e ajuda no escoamento da água da chuva.</td>
+		<td>R$ 40,00</td>
+	</tr>
+		<tr>
+		<td>Tubo PVC para Esgoto 100 mm</td>
+		<td>Tubos de PVC são essenciais para sistemas de esgoto e drenagem. O modelo de 100 mm é ideal para a rede de esgoto residencial, garantindo resistência e durabilidade.</td>
+		<td>R$ 90,00</td>
+	</tr>
+		<tr>
+		<td>Tinta Látex PVA 18 Litros (Branco Fosco)</td>
+		<td> Essa tinta látex é ideal para pintura de paredes internas, oferecendo boa cobertura e acabamento fosco. Ela é de fácil aplicação e secagem rápida, ideal para ambientes residenciais e comerciais.</td>
+		<td>R$ 275,00</td>
+	</tr>
+	
+</table>
+</body>
+</html>
+
+ <head>
+ <style>
+
+	body{
+	 background-color:#c9d6df;
+	 text-align: center;
+}	
+
+	table tr:first-child {
+	 background-color: #2f4f4f;
+	 color: white;
+	 font-family: Arial;
+	 font-size: 150%;
+}
+	table {
+	 color: Black;
+	 font-family: Arial;
+	 font-size: 100%;
+	 width: 80%;
+	 margin: 0 auto;
+}
+  
+  
+  
+  </style>
+  </head>
